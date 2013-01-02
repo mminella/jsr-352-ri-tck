@@ -1,0 +1,22 @@
+<batch-artifacts>
+    <item-reader id="GoodItemReader" class="jsr352.tck.specialized.GoodItemReaderImpl" />
+    <item-reader id="BadItemReader" class="jsr352.test.BadItemReaderImpl" />
+    <batchlet id="BatchletUsingStepContextImpl" class="jsr352.test.BatchletUsingStepContextImpl" />
+    <item-processor id="DoSomethingItemProcessor" class="jsr352.test.DoSomethingItemProcessorImpl" />
+    <item-writer id="DoSomethingItemWriter" class="jsr352.test.DoSomethingItemWriterImpl" />
+    <item-reader id="AccessLackingItemReader" class="jsr352.test.MyBadItemReaderImpl" />
+    <batchlet id="MyBatchlet" class="jsr352.test.MyBatchletImpl" />
+    <batchlet id="MyBatchletWithProperties" class="jsr352.test.MyBatchletWithPropertiesImpl" />
+    <batchlet id="MyIncompleteBatchlet" class="jsr352.test.MyIncompleteBatchletImpl" />
+    <itemprocessor-listener id="MyItemProcessListener" class="jsr352.test.MyItemProcessListenerImpl" />
+    <itemread-listener id="MyItemReadListener" class="jsr352.test.MyItemReadListenerImpl" />
+    <itemwrite-listener id="MyItemWriteListener" class="jsr352.test.MyItemWriteListenerImpl" />
+    <item-writer id="MyItemWriter" class="jsr352.test.MyItemWriterImpl" />
+    <job-listener id="MyJobListenerBIG" class="jsr352.test.MyJobListenerImpl" />
+    <job-listener id="MyJobListenerSmall" class="jsr352.test.MyJobListenerImpl2" />
+    <batchlet id="MyLongRunningBatchlet" class="jsr352.test.MyLongRunningBatchletImpl" />
+    <retry-listener id="MyRetryListener" class="jsr352.test.MyRetryListenerImpl" />
+    <skip-listener id="MySkipAndStepListener" class="jsr352.test.MySkipAndStepListener" />
+    <step-listener id="MySkipAndStepListener" class="jsr352.test.MySkipAndStepListener" />
+    <decider id="MyStepDeciderImpl" class="jsr352.test.MyStepDeciderImpl" />
+</batch-artifacts>

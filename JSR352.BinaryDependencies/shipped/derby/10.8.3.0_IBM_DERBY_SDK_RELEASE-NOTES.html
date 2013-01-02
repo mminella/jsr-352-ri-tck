@@ -1,0 +1,97 @@
+<html lang="en">
+<title>Release Notes for IBM Derby SDK 10.8.3.0</title>
+<body>
+<h1>
+<a name="Release Notes for IBM Derby SDK 10.8.3.0"></a>Release Notes for IBM Derby SDK 10.8.3.0</h1>
+<div>
+<p>These notes describe the difference between IBM Derby SDK release 10.8.3.0 and the preceding release IBM Derby SDK 10.5</p>
+</div>
+<ul>
+<li>
+<a href="#Overview">Overview</a>
+</li>
+<li>
+<a href="#Unsupported Features">Unsupported Features and Beta Note</a>
+</ul>
+<h2>
+<a name="Overview"></a>Overview</h2>
+<div>
+<p>
+IBM Derby SDK 10.8.3.0 is a repackaging of Apache Derby Release 10.8.3.0. The repackaging involves some minor changes:
+<ul>
+<li>
+The distribution has been split into two parts: 
+<ul>
+<li>
+DerbySDK_10.8.3.0_core.zip holds the jar files
+</li>
+<li>
+DerbySDK_10.8.3.0_extra.zip holds the bin, demo, doc and javadoc directories
+</li>
+</ul>
+</li>
+<li>
+No tar.gz files have been created.
+</li>
+<li>
+The derby.war file for the NetworkServer Servlet has been moved to the demos directory under the servlet directory.
+</li>
+<li>
+Some demos have been deemed inappropriate for use within IBM and have been removed. 
+</li>
+<li>
+The eclipse plugins are no longer provided.
+</li>
+<li>
+The functional tests are not provided except by special request.
+</li>
+<li>
+The RELEASE-NOTES.html file has been renamed and similar files from Apache versions not available as Common Components have been renamed using a matching naming convention, and placed in a separate releasenotes directory.
+</li>
+<li>
+The Release Notes for the versions between 10.5 and 10.8 can be found here:
+<ul>
+<li>
+  <a href="releasenotes/10.6.1.0_RELEASE-NOTES.html">10.6.1.0_RELEASE-NOTES.html</a>
+</li>
+<li>
+  <a href="releasenotes/10.6.2.1_RELEASE-NOTES.html">10.6.2.1_RELEASE-NOTES.html</a>
+</li>
+<li>
+  <a href="releasenotes/10.7.1.1_RELEASE-NOTES.html">10.7.1.1_RELEASE-NOTES.html</a>
+</li>
+<li>
+  <a href="releasenotes/10.8.1.2_RELEASE-NOTES.html">10.8.1.2_RELEASE-NOTES.html</a>
+</li>
+<li>
+  <a href="releasenotes/10.8.2.2_RELEASE-NOTES.html">10.8.2.2_RELEASE-NOTES.html</a>
+</li>
+<li>
+  <a href="releasenotes/10.8.3.0_RELEASE-NOTES.html">10.8.3.0_RELEASE-NOTES.html</a>
+</li>
+</ul>
+<li>
+The index.html has been adjusted to refer to a release notes file for the IBM Derby SDK.
+</li>
+</p>
+</div>
+
+<h2>
+<a name="Unsupported Features"></a>Unsupported Features</h2>
+<div>
+The IBM Derby team has chosen not to support a number of features at this time:
+<ul>
+<li>
+Replication: Incomplete feature. Use other IBM Replication solutions.
+</li>
+<li>
+SQL ROW_NUMBER() function: The OVER() clause is not implemented. Numbered results are in random order. See Reference Guide section 7.11
+</li>
+<li>
+Localizations. IBM no longer performs the localizations. A number of the localizations are kept up to date by the Open Source community, but up to date versions were not received at the time of release. Other localizations have lapsed altogether. The functionality is supported to the extend that if the localizations are used nonetheless, and a message can not be found in the locale used, Derby will display the English equivalent. 
+</li>
+</ul>
+
+</div>
+</body>
+</html>
